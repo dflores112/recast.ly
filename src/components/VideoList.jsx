@@ -9,13 +9,22 @@ import exampleVideoData from '../data/exampleVideoData.js';
 
 var VideoList = (props) => (
   <div className="video-list">
-    {props.videos.map(video =>
-      <VideoListEntry video={video} key={video.id.videoId} /> //</em> view goes here</h5></div>
+    {props.videos.map(
+      x => <VideoListEntry
+        video={x}
+        key={x.id.videoId}
+        playThisVideo={props.playThisVideo}
+      /> //</em> view goes here</h5></div>
     )}
   </div>
 );
 
-
+/*
+props = {
+  videos: {this.state.availableVidoes},
+  playThisVideo: playThisVideo
+}
+*/
 
 // - in list entry, use correct video thumbnail from data set
 // - in list entry, add video description

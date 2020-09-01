@@ -6,32 +6,21 @@ import VideoPlayer from './VideoPlayer.js';
 import Search from './Search.js';
 
 
-// var App = () => (
-//   <div>
-//     <nav className="navbar">
-//       <div className="col-md-6 offset-md-3">
-//         <div><h5><em>search</em> view goes here</h5></div>
-//       </div>
-//     </nav>
-//     <div className="row">
-//       <div className="col-md-7">
-//         <VideoPlayer video={exampleVideoData[0]} />
-//       </div>
-//       <div className="col-md-5">
-//         <VideoList videos={exampleVideoData} />
-//       </div>
-//     </div>
-//   </div>
-// );
-
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      currentlyPlaying: exampleVideoData[0].id.videoId,
+      currentlyPlaying: exampleVideoData[0],
       availableVidoes: exampleVideoData,
+      autoplay: false,
       done: false
+    };
+
+    this.playThisVideo = (newVideo) => {
+      this.setState({
+        currentlyPlaying: newVideo
+      });
     };
   }
 
@@ -45,10 +34,15 @@ class App extends React.Component {
         </nav>
         <div className="row">
           <div className="col-md-7">
-            <VideoPlayer video={exampleVideoData[0]} />
+            <VideoPlayer
+              video={this.state.currentlyPlaying}
+            />
           </div>
           <div className="col-md-5">
-            <VideoList videos={exampleVideoData} />
+            <VideoList
+              videos={this.state.availableVidoes}
+              playThisVideo={this.playThisVideo}
+            />
           </div>
         </div>
       </div>
