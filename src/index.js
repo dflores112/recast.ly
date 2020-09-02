@@ -11,15 +11,13 @@ var options = {
   query: 'React tutorial'
 };
 var initialize = (data) => {
-  console.log(data);
-  // _searchResultData = [];
-  // _searchResultData.push(...data);
+  console.log(data.items);
+  //_searchResultData = data;
   console.log('New data save complete.');
 };
-debugger;
-searchYouTube(options, initialize);
 
+searchYouTube(options, initialize);
 console.log(_searchResultData);
 
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
