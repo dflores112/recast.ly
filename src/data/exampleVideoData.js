@@ -9,7 +9,6 @@ var exampleVideoData = [{
     videoId: '4ZAEBxGipoA'
   },
   snippet: {
-    publishTime: "2018-07-16T16:51:44Z",
     publishedAt: '2015-08-02T20:52:58.000Z',
     channelId: 'UCJbPGzawDH1njbqV-D5HqKw',
     title: 'React JS Tutorial for Beginners - 1 - Introduction',
@@ -42,7 +41,6 @@ var exampleVideoData = [{
     videoId: 'mFEoarLnnqM'
   },
   snippet: {
-    publishTime: "2018-07-16T16:51:44Z",
     publishedAt: '2014-08-08T21:31:58.000Z',
     channelId: 'UCKKQaFUwyPb6iC-42rFRz2Q',
     title: 'Thinking in React, a step by step screencast tutorial',
@@ -75,7 +73,6 @@ var exampleVideoData = [{
     videoId: '0ByoQm-vnYw'
   },
   snippet: {
-    publishTime: "2018-07-16T16:51:44Z",
     publishedAt: '2015-12-08T20:51:18.000Z',
     channelId: 'UClLXKYEEM8OBBx85DOa6-cg',
     title: 'React Tutorial for Beginners',
@@ -108,7 +105,6 @@ var exampleVideoData = [{
     videoId: 'o5E894TmHJg'
   },
   snippet: {
-    publishTime: "2018-07-16T16:51:44Z",
     publishedAt: '2015-03-09T08:19:59.000Z',
     channelId: 'UCMYct3vtNaMwZAA3_DNsWMw',
     title: 'Flux Tutorial - Writing a Simple App in Flux and React',
@@ -163,8 +159,7 @@ var exampleVideoData = [{
       }
     },
     channelTitle: '',
-    liveBroadcastContent: 'none',
-    publishTime: "2018-07-16T16:51:44Z"
+    liveBroadcastContent: 'none'
   }
 }];
 
@@ -178,7 +173,7 @@ var exampleVideoData = [{
 //   },
 //   kind: "youtube#searchResult",
 //   snippet: {
-//     channelId: "UCWv7vMbMWH4-V0ZXdmDpPBA",,
+//     channelId: "UCWv7vMbMWH4-V0ZXdmDpPBA",
 //     channelTitle: "Programming with Mosh",
 //     description: "React Tutorial - Learn to build fast web apps with React (React js) from scratch. Get the complete React course: http://bit.ly/2KVl2A3 Subscribe for more ...",
 //     liveBroadcastContent: "none",
